@@ -1,0 +1,25 @@
+header.header 
+   img.logo(src="./assets/img/logo.png", alt="Trillo Logo")
+
+   form.search(action="#") 
+      input.search__input(type="text" placeholder="Search Hotels")
+      button.search__button(type="submit")
+         //- importa svg en html
+         svg.search__icon 
+            use(xlink:href="./assets/img/sprite.svg#icon-magnifying-glass") 
+
+   nav.userNav   
+      .userNav__iconBox 
+         svg.userNav__icon 
+            use(xlink:href="./assets/img/sprite.svg#icon-bookmark")
+         span.userNav__notification 7
+      .userNav__iconBox 
+         svg.userNav__icon 
+            use(xlink:href="./assets/img/sprite.svg#icon-chat")
+         span.userNav__notification 13
+      .userNav__user 
+         img.userNav__userPhoto(src="./assets/img/user.jpg", alt="User Photo")
+         span.userNav__userName Jonas
+
+
+   

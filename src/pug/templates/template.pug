@@ -1,0 +1,24 @@
+include ../abstracts/variables
+include ../abstracts/mixins
+
+doctype html
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      link(rel='shortcut icon' type='image/png' href='assets/img/favicon.png')
+      //- fonts
+      link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet')
+      //- style
+      link(rel="stylesheet", href="./css/main.css")
+
+      title Trillo &mdash; Your all-in-one booking app
+   body 
+      .container 
+         block header 
+         .content 
+            block sidebar 
+            block hotelView
+      //- script 
+      script(src="./js/app.js") 

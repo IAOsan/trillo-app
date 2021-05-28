@@ -1,0 +1,96 @@
+.container {
+   max-width: 120rem;
+   margin: 8rem auto;
+   background-color: var(--c-grey-l1);
+   box-shadow: var(--shadow-1);
+}
+.content {
+   display: flex;
+}
+.header {
+   font-size: 1.4rem;
+   height: 7rem;
+   background-color: #fff;
+   border-bottom: var(--borderb);
+   // flexbox
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.sidebar {
+   background-color: var(--c-grey-d1);
+   flex: 0 0 18%;
+}
+.hotel-view {
+   flex: 1; // ocupa el espacio restante
+}
+.detail {
+   font-size: 1.4rem;
+   display: flex;
+   padding: 4rem;
+   background-color: var(--c-grey-l2);
+   border-bottom: var(--borderb);
+}
+.description {
+   background-color: #fff;
+   box-shadow: var(--shadow-2);
+   padding: 3rem;
+   flex: 0 0 60%;
+   margin-right: 4.5rem;
+}
+.userReviews {
+   flex: 1;
+}
+
+@include response(max, 1200) {
+   .container {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+   }
+}
+@include response(max, 900) {
+   .content {
+      flex-direction: column;
+   }
+   .detail {
+      padding: 3rem;
+   }
+   .description {
+      padding: 2rem;
+      margin-right: 3rem;
+   }
+}
+
+@include response(max, 600) {
+   .detail {
+      display: flex;
+      flex-direction: column;
+   }
+   .description {
+      margin-right: 0;
+      margin-bottom: 3rem;
+   }
+   .userReviews {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+   }
+}
+
+@include response(max, 600) {
+   .header {
+      // flexbox
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+}
+@include response(max, 510) {
+   .header {
+      height: 12rem;
+      // flexbox
+      align-content: space-around;
+   }
+}

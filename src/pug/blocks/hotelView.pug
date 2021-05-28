@@ -1,0 +1,75 @@
+main.hotel-view 
+   article 
+      section.gallery 
+         figure.gallery__item 
+            img.gallery__photo(src="./assets/img/hotel-1.jpg", alt="Photo of hotel 1")
+         figure.gallery__item 
+            img.gallery__photo(src="./assets/img/hotel-2.jpg", alt="Photo of hotel 2")
+         figure.gallery__item 
+            img.gallery__photo(src="./assets/img/hotel-3.jpg", alt="Photo of hotel 3")
+      section.overview
+         h1.overview__title Hotel Las Palmas
+         .overview__stars  
+            svg.overview__iconStar 
+               use(xlink:href="./assets/img/sprite.svg#icon-star")
+            svg.overview__iconStar 
+               use(xlink:href="./assets/img/sprite.svg#icon-star")
+            svg.overview__iconStar 
+               use(xlink:href="./assets/img/sprite.svg#icon-star")
+            svg.overview__iconStar 
+               use(xlink:href="./assets/img/sprite.svg#icon-star")
+            svg.overview__iconStar 
+               use(xlink:href="./assets/img/sprite.svg#icon-star")
+         .overview__location
+            svg.overview__iconLocation
+               use(xlink:href="./assets/img/sprite.svg#icon-location-pin")
+            button.btn.btn__inline.btn__location(type="submit") Albufeira, Portugal
+         .overview__rating 
+            .overview__ratingAverage 8.6 
+            .overview__ratingCount 42 votes 
+      section.detail    
+         .description   
+            p.paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit eligendi repudiandae consequatur dolorum soluta aut optio! Omnis, nulla in?
+            p.paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laborum culpa doloribus nemo sit et.
+            ul.list 
+               li.list__item Lorem ipsum dolor sit amet.
+               li.list__item Lorem, ipsum dolor.
+               li.list__item Lorem ipsum dolor sit amet consectetur.
+               li.list__item Lorem ipsum dolor sit.
+               li.list__item Lorem ipsum dolor sit amet.
+               li.list__item Lorem ipsum dolor sit.
+               li.list__item Lorem ipsum dolor sit amet consectetur.
+               li.list__item Lorem, ipsum.
+            .recommend  
+               p.recommend__count Lorem ipsum dolor sit amet consectetur.
+               .recommend__friends
+                  img.recommend__photo(src="./assets/img/user-3.jpg", alt="Friend 1")
+                  img.recommend__photo(src="./assets/img/user-4.jpg", alt="Friend 2")
+                  img.recommend__photo(src="./assets/img/user-5.jpg", alt="Friend 3")
+                  img.recommend__photo(src="./assets/img/user-6.jpg", alt="Friend 4")
+         .userReviews
+            figure.review
+               blockquote.review__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae voluptate voluptatem fugit, nisi provident.
+               figcaption.review__user
+                  img.review__photo(src="./assets/img/user-1.jpg", alt="User 1")
+                  .review__userBox 
+                     p.review__userName Nick Smith
+                     p.review__userDate Feb 23, 2021
+                  .review__userRating 7.8
+            figure.review
+               blockquote.review__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae voluptate voluptatem fugit, nisi provident.
+               figcaption.review__user
+                  img.review__photo(src="./assets/img/user-2.jpg", alt="User 2")
+                  .review__userBox 
+                     p.review__userName Mary Thomas
+                     p.review__userDate Sep 13th, 2021
+                  .review__userRating 9.3
+            button.btn.btn__inline.btn__reviews(type="submit") Show All 
+               span &rarr;
+      section.cta
+         h2.cta__bookNow Lorem ipsum dolor, sit amet consectetur adipisicing.
+         button.btn.btn__round(type="submit") 
+            span.btn__round--invisible Only 4 rooms left
+            span.btn__round--visible Book now 
+            
+

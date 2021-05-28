@@ -1,0 +1,10 @@
+/*
+1200
+1100
+900
+*/
+@mixin response($type, $breakpoint) {
+   @media only screen and (#{$type}-width: #{$breakpoint / 16}em) {
+      @content;
+   }
+}
